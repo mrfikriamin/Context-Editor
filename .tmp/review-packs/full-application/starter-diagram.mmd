@@ -1,0 +1,8 @@
+flowchart TD
+  U["User"] --> A["Notesmith"]
+  A --> V["Validate input"]
+  V --> F0["Create and edit notes"]
+  F0 --> F1["Full-text search"]
+  F1 --> F2["Tagging"]
+  F2 --> S
+  S[("Store / state")] --> A

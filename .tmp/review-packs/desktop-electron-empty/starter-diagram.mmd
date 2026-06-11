@@ -1,0 +1,9 @@
+flowchart TD
+  U["User"] --> W["Notesmith window (Electron)"]
+  W --> B["Core boundary: ipcMain handler in the main process"]
+  B --> V["Validate input"]
+  V --> F0["Create and edit notes"]
+  F0 --> F1["Full-text search"]
+  F1 --> F2["Tagging"]
+  F2 --> S
+  S[("Local storage: app data")] --> W

@@ -1,0 +1,7 @@
+flowchart TD
+  T["Trigger: manual"] --> P["Read and validate input: CSV"]
+  P --> F0["Create and edit notes"]
+  F0 --> F1["Full-text search"]
+  F1 --> F2["Tagging"]
+  F2 --> O
+  O["Write output: JSON"] --> L["Log and exit code"]

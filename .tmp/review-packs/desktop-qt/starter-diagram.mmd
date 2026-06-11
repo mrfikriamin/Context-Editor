@@ -1,0 +1,9 @@
+flowchart TD
+  U["User"] --> W["Notesmith window (Qt 6)"]
+  W --> B["Core boundary: controller/service classes"]
+  B --> V["Validate input"]
+  V --> F0["Create and edit notes"]
+  F0 --> F1["Full-text search"]
+  F1 --> F2["Tagging"]
+  F2 --> S
+  S[("Local storage: SQLite in app data")] --> W

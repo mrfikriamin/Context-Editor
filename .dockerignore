@@ -1,0 +1,26 @@
+.git
+.gitignore
+.next
+node_modules
+out
+build
+coverage
+dist
+.cache
+
+# Local environment and generated artifacts
+.env
+.env.*
+.vercel
+.venv
+.tmp
+graphify-out
+*.log
+*.tsbuildinfo
+next-env.d.ts
+
+# Agent/tooling metadata that is not needed inside the app image
+.agents
+.claude
+.jazz
+skills-lock.json
